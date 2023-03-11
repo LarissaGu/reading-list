@@ -1,15 +1,40 @@
+:root {
+  --branding-color: #004445;
+  --secondary-color: #2c786c;
+  --background-color: #faf5e4;
+}
+
 h1 {
-  font-size: 48px;
+  font-size: 64px;
 }
 
 h2 {
   font-size: 36px;
 }
+
 h1,
 h2 {
   font-family: "Special Elite", cursive;
+  color: #fff;
 }
 
 p {
   font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  background: var(--secondary-color);
+}
+
+.hero {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 15px 40px 15px;
+  text-align: center;
+  background: var(--branding-color);
+}
+
+.hero img {
+  max-width: 300px;
+  margin: 0 auto;
 }
