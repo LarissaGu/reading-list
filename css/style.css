@@ -2,6 +2,19 @@
   --branding-color: #004445;
   --secondary-color: #2c786c;
   --background-color: #faf5e4;
+  --btn-color: #f8b400;
+  --heading-font: "Special Elite", cursive;
+  --default-font: "Lato", sans-serif;
+}
+
+body {
+  font-family: var(--default-font);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: var(--branding-color);
 }
 
 h1 {
@@ -9,17 +22,12 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
-}
-
-h1,
-h2 {
-  font-family: "Special Elite", cursive;
-  color: #fff;
+  font-size: 48px;
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: var(--default-font);
+  font-size: 18px;
 }
 
 .navbar {
@@ -29,7 +37,7 @@ p {
 .hero {
   display: block;
   margin: 0 auto;
-  padding: 20px 15px 40px 15px;
+  padding: 20px 20px 40px 20px;
   text-align: center;
   background: var(--branding-color);
 }
@@ -37,4 +45,44 @@ p {
 .hero img {
   max-width: 300px;
   margin: 0 auto;
+}
+.hero h1 {
+  color: #fff;
+}
+.hero h2 {
+  color: #fff;
+}
+
+.btn-cta {
+  background-color: var(--btn-color);
+  font-family: var(--default-font);
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 5px auto;
+  color: var(--branding-color);
+}
+
+.main-content {
+  padding: 0 40px;
+}
+
+.book-card {
+  border: none;
+  color: var(--branding-color);
+}
+
+.book-cover {
+  border: 10px solid var(--background-color);
+}
+
+.btn-books {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    padding: 0 20px;
+  }
 }
