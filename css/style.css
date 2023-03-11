@@ -1,0 +1,25 @@
+/*
+font-family: 'Alex Brush', cursive;
+font-family: 'Quicksand', sans-serif;
+*/
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+h1,
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.emphasized-l {
+  font-family: "Alex Brush", cursive;
+  font-size: 130px;
+}
