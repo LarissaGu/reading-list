@@ -18,11 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Special+Elite&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Special+Elite&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
@@ -67,73 +63,86 @@
         </div>
       </div>
     </nav>
-
-    <div class="hero">
-      <img
-        src="/images/readinglist_logo_white.png"
-        alt="Larissa's Reading List Hero Image"
-        class="img-fluid d-none d-md-block"
-      />
-      <h1 class="text-uppercase">Larissa's Reading List</h1>
-      <h2>I read one book from and about every country I travel to.</h2>
-      <a href="#" class="btn btn-cta mt-3">Let's see all the books.</a>
-    </div>
-    <div class="main-content">
-      <div class="container-fluid">
-        <div class="mt-5 mb-5">
+    <div class="container-fluid">
+      <div class="row hero">
+        <div class="col-sm-4">
+          <img
+            src="/images/HeroImage.png"
+            alt="Larissa's Reading List Hero Image"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-8 hero-text">
+          <h1 class="text-uppercase">Larissa's Reading List</h1>
+          <h2>I read one book from and about every country I travel to.</h2>
+          <a href="#" class="btn btn-cta mt-3">Let's see all the books.</a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="intro-section pt-5 pb-5">
           <div class="row">
-            <div class="col-sm-4">
-              <h3 class="mb-3">
-                <i class="fa-solid fa-book-open"></i> Currently reading
-              </h3>
-              <div class="card book-card mb-3">
-                <div class="row g-0">
-                  <div class="col-sm-3">
+            <div class="col-md-6">
+              <div class="currently-reading">
+                <h3 class="mb-3 pt-3 text-center">
+                  <i class="fa-solid fa-book-open"></i> Currently reading
+                </h3>
+                <div class="row">
+                  <div class="col-md-4">
                     <img
-                      src="/images/catchtherabbit.png"
+                      src="/images/catchtherabbit_2.jpeg"
                       class="img-fluid rounded"
                       alt="Catch the Rabbit"
                     />
                   </div>
-                  <div class="col-sm-9">
-                    <div class="card-body">
-                      <h5 class="card-title">Catch the Rabbit</h5>
-                      <p>by Lana Bastasic</p>
-                      <p>
-                        <small class="text-muted">Bosnia</small>
-                      </p>
-                    </div>
+                  <div class="col-md-8 pt-5">
+                    <h4>Catch the Rabbit</h4>
+                    <p>by Lana Bastašić</p>
+                    <p class="book-country">🇧🇦 Bosnia-Hercegovina</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
-              <h3><i class="fa-solid fa-location-dot"></i> Current Location</h3>
-              <p>
-                Berlin
-                <br />
-                Germany
-              </p>
-              <p>Next: Pécs, Hungary</p>
-            </div>
-            <div class="col-sm-4">
-              <h3 class="mb-3">
-                <i class="fa-solid fa-circle-user"></i> About me
-              </h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-                vero consequuntur nemo expedita, corporis quasi modi dolorum
-                laudantium sed sequi cum veniam harum reiciendis similique unde
-                nihil architecto voluptatum dolorem!
-              </p>
-              <a href="/about.html" class="btn btn-secondary">Find out more</a>
+            <div class="col-md-6">
+              <div class="current-location">
+                <h3 class="mb-3 pt-3 text-center">
+                  <i class="fa-solid fa-location-dot"></i> Current Location
+                </h3>
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      src="/images/kompass.png"
+                      class="img-fluid rounded"
+                      alt="Kompass-Icon"
+                    />
+                  </div>
+                  <div class="col-md-8 pt-5">
+                    <h4 class="mb-3 pt-3">Berlin, Germany</h4>
+                    <p>Next: Pécs, Hungary</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="book-section mt-5">
-          <h2>The Books</h2>
+
+        <div class="book-section mt-5 mb-5">
+          <h2 class="text-center text-uppercase pb-3 pt-3">The Books</h2>
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
+              <div class="card book-card">
+                <img
+                  src="/images/thedoor.png"
+                  class="card-img-top book-cover"
+                  alt="The Door"
+                />
+                <div class="card-body text-center">
+                  <h4>The Door</h4>
+                  <p>by Magda Szabó</p>
+                  <p class="book-country">🇭🇺 Hungary</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
               <div class="card book-card">
                 <img
                   src="/images/catchtherabbit.png"
@@ -142,50 +151,64 @@
                 />
                 <div class="card-body text-center">
                   <h4>Catch the Rabbit</h4>
-                  <p class="card-text">by Lana Bastasic</p>
-                  <p class="card-text">Bosnia</p>
+                  <p>by Lana Bastašić</p>
+                  <p class="book-country">🇧🇦 Bosnia-Hercegovina</p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
               <div class="card book-card">
                 <img
-                  src="/images/Familienroman.jpeg"
+                  src="/images/familienroman.png"
                   class="card-img-top book-cover"
                   alt="Familienroman"
                 />
                 <div class="card-body text-center">
                   <h4>Familienroman</h4>
-                  <p class="card-text">by Ivana Sajko</p>
-                  <p class="card-text">Croatia</p>
+                  <p>by Ivana Sajko</p>
+                  <p class="book-country">🇭🇷 Croatia</p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
               <div class="card book-card">
                 <img
-                  src="/images/Free.jpeg"
+                  src="/images/free.png"
                   class="card-img-top book-cover"
                   alt="Free"
                 />
                 <div class="card-body text-center">
                   <h4>Free</h4>
-                  <p class="card-text">by Lea Ypi</p>
-                  <p class="card-text">Albania</p>
+                  <p>by Lea Ypi</p>
+                  <p class="book-country">🇦🇱 Albania</p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
               <div class="card book-card">
                 <img
-                  src="/images/thebastardofistanbul.jpeg"
+                  src="/images/thebastardofistanbul.png"
                   class="card-img-top book-cover"
                   alt="The Bastard of Istanbul"
                 />
                 <div class="card-body text-center">
                   <h4>The Bastard of Istanbul</h4>
-                  <p class="card-text">by Elif Shafak</p>
-                  <p class="card-text">Turkey</p>
+                  <p>by Elif Shafak</p>
+                  <p class="book-country">🇹🇷 Turkey</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card book-card">
+                <img
+                  src="/images/ikilledscheheradze.png"
+                  class="card-img-top book-cover"
+                  alt="I Killed Scheherazade"
+                />
+                <div class="card-body text-center">
+                  <h4>I Killed Scheherazade</h4>
+                  <p>by Joumana Haddad</p>
+                  <p class="book-country">🇱🇧 Lebanon</p>
                 </div>
               </div>
             </div>

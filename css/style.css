@@ -1,19 +1,20 @@
 :root {
   --branding-color: #004445;
   --secondary-color: #2c786c;
-  --background-color: #faf5e4;
+  --background-color: #f8f9fa;
   --btn-color: #f8b400;
+  --background-gradient: linear-gradient(
+    73deg,
+    rgb(44, 120, 108) 0%,
+    rgb(0, 68, 69) 100%
+  );
   --heading-font: "Special Elite", cursive;
-  --default-font: "Lato", sans-serif;
+  --default-font: "Montserrat", sans-serif;
 }
 
 body {
   font-family: var(--default-font);
-}
-h1,
-h2,
-h3 {
-  font-family: var(--heading-font);
+  background: var(--background-color);
   color: var(--branding-color);
 }
 
@@ -22,67 +23,156 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 44px;
+}
+
+h3 {
+  color: var(--background-color);
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 p {
-  font-family: var(--default-font);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .navbar {
-  background: var(--secondary-color);
+  background: var(--background-gradient);
 }
 
 .hero {
-  display: block;
-  margin: 0 auto;
-  padding: 20px 20px 40px 20px;
-  text-align: center;
-  background: var(--branding-color);
+  padding: 10px 30px 40px 30px;
 }
 
 .hero img {
-  max-width: 300px;
+  max-width: 80%;
+  border-radius: 5px;
+  display: block;
   margin: 0 auto;
 }
-.hero h1 {
-  color: #fff;
-}
-.hero h2 {
-  color: #fff;
+
+.hero-text {
+  padding: 80px 30px 30px 0px;
 }
 
 .btn-cta {
-  background-color: var(--btn-color);
+  background: var(--btn-color);
   font-family: var(--default-font);
-  font-size: 20px;
-  padding: 15px 20px;
+  font-size: 24px;
+  padding: 20px 30px;
   margin: 5px auto;
   color: var(--branding-color);
+  transition: all 600ms ease-in-out;
+}
+
+.btn-cta:hover {
+  background: #eeecde;
+  color: var(--btn-color);
 }
 
 .main-content {
-  padding: 0 40px;
+  padding: 0 60px;
+}
+
+.intro-section {
+  margin: 0 160px;
+}
+
+.currently-reading,
+.current-location {
+  background: var(--background-gradient);
+  padding: 20px 40px;
+  margin: 0 20px;
+  border-radius: 5px;
+  color: var(--background-color);
+}
+
+.currently-reading .book-card {
+  background: var(--background-gradient);
+  color: var(--background-color);
+}
+
+.book-section h2 {
+  font-size: 72px;
 }
 
 .book-card {
   border: none;
   color: var(--branding-color);
+  background: var(--background-color);
+  margin-bottom: 20px;
 }
 
 .book-cover {
-  border: 10px solid var(--background-color);
+  border-radius: 3px;
 }
 
-.btn-books {
-  display: flex;
-  justify-content: center;
-  max-width: 50%;
+.book-country {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 44px;
+  }
+
+  .hero-text h2 {
+    font-size: 32px;
+  }
+
+  .hero img {
+    padding-top: 40px;
+  }
+
+  .btn-cta {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 900px) {
   .main-content {
     padding: 0 20px;
+  }
+
+  .hero-text {
+    padding: 40px 30px 0px 0px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .btn-cta {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero img {
+    padding-top: 0px;
+    margin: 0 auto;
+    max-width: 70%;
+  }
+
+  .hero-text {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
   }
 }
