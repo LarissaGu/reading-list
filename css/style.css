@@ -74,6 +74,23 @@ p {
   color: var(--btn-color);
 }
 
+.btn-secondary {
+  background: var(--background-color);
+  border: 1px solid var(--btn-color);
+  font-family: var(--default-font);
+  font-size: 24px;
+  padding: 20px 30px;
+  margin: 5px auto;
+  color: var(--btn-color);
+  transition: all 600ms ease-in-out;
+}
+
+.btn-secondary:hover {
+  background: var(--btn-color);
+  color: #eeecde;
+  border: none;
+}
+
 .main-content {
   padding: 0 60px;
 }
@@ -119,12 +136,16 @@ p {
   max-width: 50%;
 }
 
+.about-intro {
+  padding-left: 60px;
+}
+
 @media (max-width: 1024px) {
-  .hero-text h1 {
+  h1 {
     font-size: 44px;
   }
 
-  .hero-text h2 {
+  h2 {
     font-size: 32px;
   }
 
@@ -132,7 +153,8 @@ p {
     padding-top: 40px;
   }
 
-  .btn-cta {
+  .btn-cta,
+  .btn-secondary {
     font-size: 18px;
   }
 
@@ -150,21 +172,26 @@ p {
     padding: 40px 30px 0px 0px;
   }
 
-  .hero-text h1 {
+  h1 {
     font-size: 32px;
   }
 
-  .hero-text h2 {
+  h2 {
     font-size: 28px;
   }
 
-  .btn-cta {
+  .btn-cta,
+  .btn-secondary {
     font-size: 16px;
     padding: 10px 15px;
   }
 
   .intro-section img {
     max-width: 120px;
+  }
+
+  .about-intro {
+    padding-top: 20px;
   }
 }
 
@@ -178,6 +205,12 @@ p {
 
   p {
     font-size: 16px;
+  }
+  .about-intro {
+    padding: 30px 60px;
+  }
+  .about-image {
+    max-width: 70%;
   }
 }
 
