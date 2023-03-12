@@ -140,6 +140,10 @@ p {
   padding-left: 60px;
 }
 
+.books-page {
+  margin-top: 80px;
+}
+
 @media (max-width: 1024px) {
   h1 {
     font-size: 44px;
@@ -199,6 +203,7 @@ p {
   .book-section h2 {
     font-size: 36px;
   }
+
   h4 {
     font-size: 20px;
   }
