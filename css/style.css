@@ -215,7 +215,7 @@ p {
     padding: 30px 60px;
   }
   .about-image {
-    max-width: 70%;
+    display: none;
   }
 }
 
