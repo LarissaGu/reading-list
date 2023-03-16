@@ -8,7 +8,6 @@
     rgb(44, 120, 108) 0%,
     rgb(0, 68, 69) 100%
   );
-  --heading-font: "Special Elite", cursive;
   --default-font: "Montserrat", sans-serif;
 }
 
@@ -60,22 +59,6 @@ footer a:hover {
 
 .navbar {
   background: var(--background-gradient);
-}
-
-.hero {
-  padding: 10px 30px 40px 30px;
-  margin: 20px auto;
-}
-
-.hero img {
-  max-width: 80%;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-}
-
-.hero-text {
-  padding: 80px 30px 30px 0px;
 }
 
 .btn-cta {
@@ -155,8 +138,12 @@ footer a:hover {
   max-width: 50%;
 }
 
-.about-intro {
+.hero {
   padding-left: 60px;
+}
+
+.hero-text {
+  padding-top: 20px;
 }
 
 .books-page {
@@ -172,27 +159,19 @@ footer a:hover {
     font-size: 32px;
   }
 
-  .hero img {
-    padding-top: 40px;
+  h3 {
+    font-size: 28px;
   }
 
   .btn-cta,
   .btn-secondary {
     font-size: 18px;
   }
-
-  h3 {
-    font-size: 28px;
-  }
 }
 
 @media (max-width: 900px) {
   .main-content {
     padding: 0 20px;
-  }
-
-  .hero-text {
-    padding: 40px 30px 0px 0px;
   }
 
   h1 {
@@ -212,10 +191,6 @@ footer a:hover {
   .intro-section img {
     max-width: 120px;
   }
-
-  .about-intro {
-    padding-top: 20px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -230,39 +205,26 @@ footer a:hover {
   p {
     font-size: 16px;
   }
-  .about-intro {
-    padding: 30px 60px;
+
+  .hero {
+    padding: 30px 10px 0px 30px;
   }
-  .about-image {
+
+  /* .hero-image {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 576px) {
-  .hero img {
-    padding-top: 0px;
-    margin: 0 auto;
-    max-width: 70%;
-  }
-
-  .hero-text {
-    padding: 0px;
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 24px;
-  }
-
-  .hero-text h2 {
-    font-size: 20px;
-  }
-
   .intro-section-text {
     padding-left: 0px;
   }
 
   .btn-books {
     max-width: 100%;
+  }
+
+  .hero {
+    padding: 5px 10px 0px 30px;
   }
 }
