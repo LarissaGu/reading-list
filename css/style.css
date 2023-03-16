@@ -161,6 +161,25 @@ footer a:hover {
   margin-top: 80px;
 }
 
+.book-map {
+  background: var(--background-gradient);
+  color: var(--background-color);
+  margin: 60px 60px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-map iframe {
+  width: 640px;
+  height: 480px;
+  padding: 20px;
+}
+
+.book-map h2 {
+  padding: 20px;
+}
+
 @media (max-width: 1024px) {
   h1 {
     font-size: 44px;
@@ -209,7 +228,8 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  .book-section h2 {
+  .book-section h2,
+  .book-map h2 {
     font-size: 36px;
   }
 
@@ -238,5 +258,9 @@ footer a:hover {
   .hero {
     padding: 5px 20px 0px 30px;
     margin-top: 5px;
+  }
+
+  .book-map {
+    margin: 60px 30px;
   }
 }
