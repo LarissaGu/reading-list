@@ -41,6 +41,7 @@ p {
 footer {
   background: var(--background-gradient);
   padding: 30px 0px 20px 0;
+  margin-top: 80px;
 }
 
 footer img {
@@ -68,7 +69,7 @@ footer a:hover {
   padding: 20px 30px;
   margin: 5px auto;
   color: var(--branding-color);
-  transition: all 600ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .btn-cta:hover {
@@ -84,7 +85,7 @@ footer a:hover {
   padding: 20px 30px;
   margin: 5px auto;
   color: var(--btn-color);
-  transition: all 600ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .btn-secondary:hover {
@@ -99,7 +100,7 @@ footer a:hover {
 
 .intro-section {
   max-width: 700px;
-  margin: 10px auto;
+  margin: 60px auto;
   background: var(--background-gradient);
   padding: 30px 40px;
   border-radius: 5px;
@@ -114,6 +115,10 @@ footer a:hover {
   padding-left: 3rem;
 }
 
+.book-section {
+  margin: 120px 0;
+}
+
 .book-section h2 {
   font-size: 72px;
 }
@@ -123,6 +128,11 @@ footer a:hover {
   color: var(--branding-color);
   background: var(--background-color);
   margin-bottom: 20px;
+}
+
+.book-card .btn-secondary {
+  font-size: 16px;
+  padding: 10px 15px;
 }
 
 .book-cover {
@@ -139,11 +149,12 @@ footer a:hover {
 }
 
 .hero {
-  padding-left: 60px;
+  padding: 0 30px 0 60px;
+  margin-top: 30px;
 }
 
 .hero-text {
-  padding-top: 20px;
+  padding: 20px 20px 0 0;
 }
 
 .books-page {
@@ -191,6 +202,10 @@ footer a:hover {
   .intro-section img {
     max-width: 120px;
   }
+
+  .book-section {
+    margin: 80px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -209,10 +224,6 @@ footer a:hover {
   .hero {
     padding: 30px 10px 0px 30px;
   }
-
-  /* .hero-image {
-    display: none;
-  } */
 }
 
 @media (max-width: 576px) {
@@ -225,6 +236,7 @@ footer a:hover {
   }
 
   .hero {
-    padding: 5px 10px 0px 30px;
+    padding: 5px 20px 0px 30px;
+    margin-top: 5px;
   }
 }
